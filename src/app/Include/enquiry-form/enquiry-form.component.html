@@ -1,0 +1,19 @@
+<h2 style="text-align: center;">Enquiry Form</h2>
+<form [formGroup]="enquiryform" (ngSubmit)="onSubmit()">
+    <div class="loginform">
+        <input type="text"  formControlName="customerFirstName" placeholder="Enter Your FirstName">
+        <input type="text"  formControlName="customerLastName" placeholder="Enter Your LastName">
+        <input type="text"  formControlName="customerPanCard" placeholder="Enter Your PanCard Number">
+        <input type="number"  formControlName="customerAadharNumber" placeholder="Enter Your Adhhar Card Number">
+        <input type="email"  formControlName="customerEmailId" placeholder="Enter Your Email">
+        <input type="text"  formControlName="customerPassword" placeholder="Enter Your Password">
+        <input type="tel"  formControlName="customerMobileNumber" placeholder="Enter Your Mobile Number">
+        <!-- <div formGroupName="cibilscore">
+            <input type="text" formControlName="cstatus" placeholder="Enter your cibil status">
+            <input type="number" formControlName="cscore" placeholder="Enter your cibil score">
+        </div> -->
+    
+        <button type="submit" class="btn btn-success">Register Enquiry</button>
+        <button type="reset" class="btn btn-success">Clear All</button>
+    </div>
+</form>

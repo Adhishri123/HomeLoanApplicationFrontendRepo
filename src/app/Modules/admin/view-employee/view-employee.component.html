@@ -1,0 +1,31 @@
+<h3 style="text-align: center;">Employee Details</h3>
+<table border="1" align="center">
+<thead>
+    <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Employee Email</th>
+        <th>Employee Contact No</th>
+        <th>Employee Designation</th>
+        <th>Employee Profile Image</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let a of viewemployeeData">
+        <td>{{a.employeeId}}</td>
+        <td>{{a.employeeName}}</td>
+        <td>{{a.employeeEmail}}</td>
+        <td>{{a.employeeContactNo}}</td>
+        <td>{{a.emplyeeDesignation}}</td>
+        <td>
+            <img [src]="'data:image/jpeg;base64,'+a.employeeProfileImage"
+            height="100px" width="100px">
+        </td>
+        <td>
+            <button class="btn btn-primary" (click)="onEdit(a)"><i class="fa fa-pencil" aria-hidden="true"></i></button>              
+            <button class="btn btn-danger" (click)="onDelete(a.employeeId)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+        </td>
+    </tr>
+</tbody>
+</table>

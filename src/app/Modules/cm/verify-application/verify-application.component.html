@@ -1,0 +1,14 @@
+<!-- <p>verify-application works!</p> -->
+<form  [formGroup]="sanctionform" (ngSubmit)="onSubmit()">
+<div class="loginform">
+    
+    <input type="date"  formControlName="sanctionDate" placeholder="Select Sanction Date">
+    <input type="text"  formControlName="applicantName" placeholder="Enter Applicat Name">
+    <input type="number"  formControlName="loanAmountSanctioned" placeholder="Enter Loan Amount">
+    <input type="number"  formControlName="rateOfInterest" placeholder="Enter  Interest Rate">
+    <input type="number"  formControlName="loanTenure" placeholder="Enter Loan Tenure">
+    <input type="number"  formControlName="monthlyEmiAmount" placeholder="Enter Monthly Emi Amount">
+    <button type="submit" class="btn btn-success">Submit</button>
+
+</div>
+</form>`

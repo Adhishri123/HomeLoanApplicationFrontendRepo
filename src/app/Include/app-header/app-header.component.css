@@ -1,0 +1,14 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #d8bdf4;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(210, 192, 229, 0.9), rgba(180, 203, 243, 0.9));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(212, 191, 234, 0.9), rgba(156, 187, 241, 0.9));
+  }
+ 
+  .nav-link{
+     color: blue;
+  }

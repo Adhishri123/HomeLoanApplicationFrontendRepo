@@ -1,0 +1,37 @@
+<p>cibil-rejected works!</p>
+
+<h3 style="text-align:center;">Registred Enquiries</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Customer Id</th>
+            <th>Customer First Name</th>
+            <th>Customer Last Name</th>
+            <th>Customer PanCard Number</th>
+            <th>Customer AdharCard Number</th>
+            <th>Customer EmailId</th>
+            <th>Customer Password</th>
+            <th>Customer Mobile Number</th>
+            <th>Customer Cibil Status</th>
+            <th>Customer Cibil Score</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of viewEnquiries">
+            <td>{{ a.customerEnquiryId}}</td>
+            <td>{{ a.customerFirstName}}</td>
+            <td>{{ a.customerLastName}}</td>
+            <td>{{ a.customerPanCard}}</td>
+            <td>{{ a.customerAadharNumber}}</td>
+            <td>{{ a.customerEmailId}}</td>
+            <td>{{ a.customerPassword}}</td>
+            <td>{{ a.customerMobileNumber}}</td>
+            <td>{{ a.cibil.cstatus}}</td>
+            <td>{{a.cibil.cscore}}</td>
+           
+            
+        </tr>
+    </tbody>
+
+</table>

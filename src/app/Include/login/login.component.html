@@ -1,0 +1,15 @@
+
+<form [formGroup]="loginform" (ngSubmit)="onSubmit()">
+    <h2>Login Form</h2>
+    <div class="d-flex mm">
+    <div>
+        <img src="assets/image77665.avif" height="400px" width="600px">
+    </div>
+    <div class="loginform">
+    <input type="text"  formControlName="username" placeholder="Enter Your Username">
+    <input type="password"  formControlName="password" placeholder="Enter Your Password"><br><br>
+    <button type="submit" class="btn btn-success" style="align-self: center;">Login</button>
+    </div>
+</div>
+</form>
+

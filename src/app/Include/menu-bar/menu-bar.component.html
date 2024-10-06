@@ -1,0 +1,8 @@
+<div class="w-100 menuc">
+    <h5 style="text-align: center;color: rgb(69, 69, 148);">SBI Home Loan</h5>
+    <h3 style="text-align: center;color: rgb(69, 69, 148);">{{type}}</h3>
+    <div *ngFor="let button of userOptions[0][type]" class="d-flex justify-content-center" >
+      <button class="btn btn-primary mt-3 " (click)="navigateTo(button.link)">{{button.lable}}</button>
+    </div>
+
+</div>

@@ -1,0 +1,35 @@
+<h3 style="text-align:center;">Registred Enquiries</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Customer Id</th>
+            <th>Customer First Name</th>
+            <th>Customer Last Name</th>
+            <th>Customer PanCard Number</th>
+            <th>Customer AdharCard Number</th>
+            <th>Customer EmailId</th>
+            <th>Customer Password</th>
+            <th>Customer Mobile Number</th>
+            <th>Customer Cibil Status</th>
+            <th>Customer Cibil Score</th>
+            <th>Calculate Cibil Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of viewEnquiries">
+            <td>{{ a.customerEnquiryId}}</td>
+            <td>{{ a.customerFirstName}}</td>
+            <td>{{ a.customerLastName}}</td>
+            <td>{{ a.customerPanCard}}</td>
+            <td>{{ a.customerAadharNumber}}</td>
+            <td>{{ a.customerEmailId}}</td>
+            <td>{{ a.customerPassword}}</td>
+            <td>{{ a.customerMobileNumber}}</td>
+            <td>{{ a.cibil.cstatus}}</td>
+            <td>{{a.cibil.cscore}}</td>
+            <td><button type="button" (click)="oneditcibil(a)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
+            <td><button class="btn" (click)="sendApprovedMail(a)">Send <i class="fa fa-envelope-o" aria-hidden="true"></i></button></td>
+        </tr>
+    </tbody>
+
+</table>

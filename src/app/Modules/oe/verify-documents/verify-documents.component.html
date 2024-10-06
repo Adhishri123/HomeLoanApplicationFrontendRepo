@@ -1,0 +1,100 @@
+<!-- <p>verify-documents works!</p> -->
+<div>
+    <h3 style="text-align:center;">Customer Personal Details</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Customer First Name</th>
+                <th>Customer Last Name</th>
+                <th>Customer Mobile Number</th>
+                <th>Customer Email Id</th>
+                <th>Customer Document Status</th>
+                <th>Customer Required Loan Amount</th>
+                <th>Customer Loan Status</th>
+                <th colspan="4">Loan Verification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of viewCustomer">
+                <td>{{ a.customerApplicationId}}</td>
+                <td>{{ a.customerFirstName}}</td>
+                <td>{{ a.customerLastName}}</td>
+                <td>{{ a.customerMobileNumber}}</td>
+                <td>{{a.customerEmail}}</td>
+                <td>{{a.customerdocstatus}}</td>
+                <td>{{a.customerLoanAmountRequired}}</td>                
+                <td>{{a.customerLoanStatus}}</td>
+                <td>
+                    <div>
+                        <label class="from-label" for="Approved" style="width: 70px;">Approved</label>
+                        <span><input type="radio" id="doc" value="Approved" name="satus" formControlName="customerLoanStatus" ></span>
+                        
+                        <label class="from-label" for="Rejected" style="width: 70px;">Rejected</label>
+                        <span><input type="radio" id="doc" value="Rejected" name="satus" formControlName="customerLoanStatus"></span>
+                    </div>
+                </td>
+                <td>
+                    <button type="button" (click)="oneditDoc(a)">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- <div>
+    <h3 style="text-align:center;">Customer Personal Details</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Customer First Name</th>
+                <th>Customer Last Name</th>
+                <th>Customer Mobile Number</th>
+                <th>Customer PanCard</th>
+                <th>Customer Income Certificate</th>
+                <th>Customer Adhar Card</th>
+                <th>Customer Profile Photo</th>
+                <th>Customer Signature</th>
+                <th>Customer Bank Passbook</th>
+                <th colspan="2">Document Verification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of viewCustomer">
+                <td>{{ a.customerApplicationId}}</td>
+                <td>{{ a.customerFirstName}}</td>
+                <td>{{ a.customerLastName}}</td>
+                <td>{{ a.customerMobileNumber}}</td>
+                <td>
+                <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.panCard" height="75px" width="75px">
+                </td>
+                <td>
+                    <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.incomeProof" height="75px" width="75px">
+                    </td>
+                    <td>
+                    <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.aadharCard" height="75px" width="75px">
+                    </td>
+                    <td>
+                    <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.photo" height="75px" width="75px">
+                    </td>
+                    <td>
+                    <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.signature" height="75px" width="75px">
+                    </td>
+                    <td>
+                    <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.bankPassBook" height="75px" width="75px">
+                    </td>
+                    <td>
+                        <div>
+                        <label class="from-label" for="Approved" style="width: 70px;">Approved</label>
+                        <span><input type="radio" id="doc" value="Approved" name="satus" formControlName="customerdocstatus" ></span>
+                        
+                        <label class="from-label" for="Rejected" style="width: 70px;">Rejected</label>
+                        <span><input type="radio" id="doc" value="Rejected" name="satus" formControlName="customerdocstatus"></span>
+                    </div>
+                    </td>
+                    <td><button type="button" (click)="oneditDoc(a)">Submit</button></td>
+                    
+            </tr>
+        </tbody>
+    </table>
+</div> -->

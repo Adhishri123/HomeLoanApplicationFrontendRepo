@@ -1,0 +1,109 @@
+<div>
+    <h3 style="text-align:center;">Customer Personal Details</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Customer First Name</th>
+                <th>Customer Middle Name</th>
+                <th>Customer Last Name</th>
+                <th>Customer Mobile Number</th>
+                <th>Customer Additional Mobile Number</th>
+                <th>Customer PanCard Number</th>
+                <th>Customer AdharCard Number</th>
+                <th>customer Date Of Birth</th>
+                <th>Customer Email Id</th>
+                <th>Customer Password</th>
+                <th>Customer Gender</th>
+                <th>Customer Qualification</th>
+                <th>Customer Loan Status</th>
+                <th>Customer Loan Amount Required</th>
+                <th>Local House Number</th>
+                <th>Local Street Name</th>
+                <th>Local Area Name</th>
+                <th>Local City Name</th>
+                <th>Local District</th>
+                <th>Local State</th>
+                <th>Local Pincode</th>
+                <th>Permanent House Number</th>
+                <th>Permanent Street Name</th>
+                <th>Permanent Area Name</th>
+                <th>Permanent City Name</th>
+                <th>Permanent District</th>
+                <th>Permanent State</th>
+                <th>Permanent Pincode</th>
+                <th>Customer Profession Type</th>
+                <th>Customer Profession Mounthly Income</th>
+                <th>Customer Profession Designation</th>
+                <th>Customer Bank Account Number</th>
+                <th>Customer Bank Name</th>
+                <th>Customer Bank Branch Name</th>
+                <th>Customer Bank Ifsc Number</th>
+                <th>Customer PanCard</th>
+                <th>Customer Income Certificate</th>
+                <th>Customer Adhar Card</th>
+                <th>Customer Profile Photo</th>
+                <th>Customer Signature</th>
+                <th>Customer Bank Passbook</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of viewCustomer">
+                <td>{{ a.customerApplicationId}}</td>
+                <td>{{ a.customerFirstName}}</td>
+                <td>{{ a.customerMiddleName}}</td>
+                <td>{{ a.customerLastName}}</td>
+                <td>{{ a.customerMobileNumber}}</td>
+                <td>{{ a.customerAdditionalMobileNumber}}</td>
+                <td>{{ a.customerPanCardNumber}}</td>
+                <td>{{ a.customerAadharCard}}</td>
+                <td>{{ a.customerDateOfBirth}}</td>
+                <td>{{ a.customerEmail}}</td>
+                <td>{{ a.customerPassword}}</td>
+                <td>{{ a.customerGender}}</td>
+                <td>{{ a.customerQualification}}</td>
+                <td>{{ a.customerLoanStatus}}</td>
+                <td>{{a.customerLoanAmountRequired}}</td>
+                <td>{{a.customerAddress.localHouseNumber}}</td>
+                <td>{{a.customerAddress.localStreetName}}</td>
+                <td>{{a.customerAddress.localAreaName}}</td>
+                <td>{{a.customerAddress.localCityName}}</td>
+                <td>{{a.customerAddress.localDistrict}}</td>
+                <td>{{a.customerAddress.localState}}</td>
+                <td>{{a.customerAddress.localPincode}}</td>
+                <td>{{a.customerAddress.permanentHouseNumber}}</td>
+                <td>{{a.customerAddress.permanentStreetName}}</td>
+                <td>{{a.customerAddress.permanentAreaName}}</td>
+                <td>{{a.customerAddress.permanentCityName}}</td>
+                <td>{{a.customerAddress.permanentDistrict}}</td>
+                <td>{{a.customerAddress.permanentState}}</td>
+                <td>{{a.customerAddress.permanentPincode}}</td>
+                <td>{{a.customerProfession.professionType}}</td>
+                <td>{{a.customerProfession.professionMonthlyIncome}}</td>
+                <td>{{a.customerProfession.professionDesignation}}</td>
+                <td>{{a.customerBankDetails.customerBankAccountNumber}}</td>
+                <td>{{a.customerBankDetails.customerBankName}}</td>
+                <td>{{a.customerBankDetails.customerBankBranchName}}</td>
+                <td>{{a.customerBankDetails.customerBankIfscNumber}}</td>
+                <td>
+                <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.panCard" height="75px" width="75px">
+                </td>
+                <td>
+                <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.incomeProof" height="75px" width="75px">
+                </td>
+                <td>
+                <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.aadharCard" height="75px" width="75px">
+                </td>
+                <td>
+                <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.photo" height="75px" width="75px">
+                </td>
+                <td>
+                <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.signature" height="75px" width="75px">
+                </td>
+                <td>
+                <img [src]="'data:image/jpeg;base64,'+a.customerAllDocuments.bankPassBook" height="75px" width="75px">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

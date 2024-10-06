@@ -1,0 +1,14 @@
+<h2 style="text-align: center;">Employee Registration Form</h2>
+<form [formGroup]="addemployeeform" (ngSubmit)="onSubmit()">
+    <div class="loginform">
+        <input type="text"  formControlName="employeeName" placeholder="Enter Your Employee Name">
+        <input type="email"  formControlName="employeeEmail" placeholder="Enter Your Employee Email">
+        <input type="number"  formControlName="employeeContactNo" placeholder="Enter Your Contact Number">
+        <input type="text"  formControlName="emplyeeDesignation" placeholder="Enter Your Employee Designation">
+        <input type="file" (change)="onselectProfile($event)">
+        <img [src]="image1">
+    <button class="btn btn-success">Add Employee</button>
+    <button type="reset" class="btn btn-success">Clear All</button>
+</div>
+</form>
+

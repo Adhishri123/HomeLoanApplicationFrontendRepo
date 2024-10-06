@@ -1,0 +1,25 @@
+
+footer{
+    position:relative;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    margin-bottom: 0%;
+
+    /* background-color: blue; */
+}
+.mb-4{
+    background-color: rgb(212, 230, 250);
+    margin-left: -80px;
+    margin-right: -80px;
+}
+a{
+    font-style: italic;
+    text-shadow: 1px;
+    font-weight: bold;
+}
+.text-center{
+    font-weight: bold;
+    color: rgba(56, 115, 224, 0.961);
+    font-size:medium
+}
